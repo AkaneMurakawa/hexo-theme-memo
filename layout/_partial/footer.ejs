@@ -1,0 +1,38 @@
+<footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; <%= theme.start %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>&nbsp;&nbsp;Theme&nbsp;&nbsp;<a href="https://github.com/AkaneMurakawa/hexo-theme-memo.git" target="_blank">memo</a>
+            </div>
+            
+            <!-- <div class="footer-center">
+                &copy; <%= theme.start %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+                <a href="http://hexo.io/" target="_blank">Hexo</a>&nbsp;&nbsp;Theme&nbsp;&nbsp;<a href="https://github.com/AkaneMurakawa/hexo-theme-memo.git" target="_blank">memo</a> by Akane Murakawa
+            </div> -->
+        </div>
+        <% if (theme.visit_counter.on) { %>
+            <div class="visit">
+                <% if (theme.visit_counter.site_visit) { %>
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" ><%= theme.visit_counter.site_visit %>: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                <% } %>
+                <% if (theme.visit_counter.site_visit && theme.visit_counter.page_visit) { %>
+                    <span>, </span>
+                <% } %>
+                <% if (theme.visit_counter.page_visit) { %>
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"><%= theme.visit_counter.page_visit %>: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                <% } %>
+            </div>
+        <% } %>
+    </div>
+</footer>
