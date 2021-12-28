@@ -1,10 +1,12 @@
 # hexo-theme-memo
 
-![主题图片](./demo.png)
-
 本主题基于[black-blue](https://github.com/maochunguang/black-blue)和[theme_greyshade](https://github.com/otale/theme_greyshade),[hexo-theme-spfk](https://github.com/luuman/hexo-theme-spfk)修改而成，具体使用请参考官方文档。
 
-# 说明
+## 预览
+![主题图片](./demo.png)
+
+
+## 说明
 本主题只是做了简单的样式修改，修改的风格完全属于个人癖好。由于个人精力有限手机版并未完全适配，下面是修改说明：
 1. 将主题由黑色调整为白色
 2. 将主题的代码高亮风格修改为IDEA的Darcula风格
@@ -36,7 +38,7 @@ Markdown是一种可以使用普通文本编辑器编写的标记语言，通过
 **Markdown是一种轻量级的「标记语言」**
 ```
 
-**说明**
+### 示例
 ```
 
 <Excerpt in index | 首页摘要>
